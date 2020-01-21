@@ -1,1 +1,1 @@
-# SelfMadeTemplate
+# 【自主学習】自作の各種コードテンプレート
