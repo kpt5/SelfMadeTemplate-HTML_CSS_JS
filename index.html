@@ -65,9 +65,9 @@ ress（ https://github.com/filipelinhares/ress ）がオススメ
   <!-- Font Awesome -->
   <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
 
-  <link rel="stylesheet" href="./テンプ.css">
+  <link rel="stylesheet" href="./css/テンプ.css">
 
-<!--  <link rel="stylesheet" href="./responsive.css">-->
+  <link rel="stylesheet" href="./css/responsive.css">
 
   <!-- IE8以下用に2つのスクリプトを記述
     html5shiv.js: IE8以下にHTML5の要素を認識するようにさせる
@@ -197,7 +197,7 @@ ex.コメント部分を含んだ記事全体・コメントの一つ一つ
           <!-- 必ず見出しをつける。＝section直後には大体h1～6が来る。 -->
           <section>
             <!-- ★標準的な記事 -->
-            <div class="sec_1">
+            <div class="sec_1" id="sec_1">
               <h2>■（.sec_1）h２：大見出し■</h2>
               <!-- ■
 <br>とはbreak（改行）の略。テキストや画像等をブラウザ上で改行させたいときに使用。
@@ -254,8 +254,8 @@ hrタグの色や太さはスタイルシートで設定することができま
             </div>
             <section>
               <!-- ★orderd list（ol：順序付きリスト） -->
-              <div class="sec_1-1">
-                <h3>■（.sec_1-1）h３_orderd list（ol：順序付きリスト）■</h3>
+              <div id="sec_1-1">
+                <h3>■（#sec_1-1）h３_orderd list（ol：順序付きリスト）■</h3>
                 <!-- リストタグ直下にはliタグしか置けない。liタグ内部には見出しタグや画像タグなどを入れてOK。ただし、各liタグ内のタグ構造は統一する。 -->
                 <ol>
                   <li>
@@ -279,8 +279,8 @@ widthとheightは指定しない場合は原寸で表示。
             </section>
             <section>
               <!-- ★入力・送信form -->
-              <div class="sec_1-2">
-                <h3>■（.sec_1-2）h３_入力・送信form■</h3>
+              <div id="sec_1-2">
+                <h3>■（#sec_1-2）h３_入力・送信form■</h3>
                 <!-- action：フォームの入力内容をどこに送るか、送信先のページを指定。 -->
                 <!-- method：フォーム送信の通信方式(get/post)を指定。 -->
                 <form action="#" method="post">
@@ -355,8 +355,8 @@ textarea：maxlength属性を利用することで、HTMLのタグだけJavaScri
             </section>
             <section>
               <!-- ★表 -->
-              <div class="sec_1-3">
-                <h3>■（.sec_1-3）h３_表■</h3>
+              <div id="sec_1-3">
+                <h3>■（#sec_1-3）h３_表■</h3>
                 <!-- ■
 【 テーブル要素の属性 】
 属性説明
@@ -466,7 +466,7 @@ sandbox="allow-top-navigation"（最上位の親 (target_top)だけは操作で�
                 <!-- iframeのシンプルな利用方法 -->
                 <div class="iframe_default">
                   <h4>■（.sec_1-4-）h4_iframeのシンプルな利用方法■</h4>
-                  <iframe src="smp63_1.html">
+                  <iframe src="https://webliker.info/yomikata-wakarukun/">
                     ■iframeに対応していないブラウザに表示するメッセージや説明、リンク■
                   </iframe>
                 </div>
@@ -477,12 +477,12 @@ sandbox="allow-top-navigation"（最上位の親 (target_top)だけは操作で�
                   <ul>
                     <li>
                       <a href="http://webdesign.practice.jp/" target="target_box">
-                        ■＊Web Design 覚え書き＊を表示■
+                        ■リンク１を表示■
                       </a>
                     </li>
                     <li>
                       <a href="http://honttoni.blog74.fc2.com/" target="target_box">
-                        ■ほんっとにはじめてのHTML5とCSS3を表示■
+                        ■リンク２を表示■
                       </a>
                     </li>
                   </ul>
@@ -521,8 +521,8 @@ objectではsrc属性ではなく、data属性に埋め込みたいページのU
             </section>
             <section>
               <!-- ★video：サーバーにアップロードした動画を埋め込む -->
-              <div class="sec_1-5">
-                <h3>■（.sec_1-5）h３_video：サーバーにアップロードした動画を埋め込む■</h3>
+              <div id="sec_1-5">
+                <h3>■（#sec_1-5）h３_video：サーバーにアップロードした動画を埋め込む■</h3>
                 <!-- ■
 旧ブラウザではサポートされていない場合があります。
 IE8以前では<head>~</head>の中に以下のコードを書くだけで対応OKです。
@@ -586,8 +586,8 @@ videoタグ（及びaudioタグ）では、下記の書き方をすることで�
             </section>
             <section>
               <!-- ★definition list（定義リスト） -->
-              <div class="sec_1-6">
-                <h3>■（.sec_1-6）h３_definition list（定義リスト）■</h3>
+              <div id="sec_1-6">
+                <h3>■（#sec_1-6）h３_definition list（定義リスト）■</h3>
                 <!-- ■
 用語集やF&Qなどのコーティングで頻繁に使用されます。
                  -->
@@ -601,8 +601,8 @@ videoタグ（及びaudioタグ）では、下記の書き方をすることで�
             </section>
             <section>
               <!-- ★pre：Preformatted Text（整形済みテキスト） -->
-              <div class="sec_1-7">
-                <h3>■（.sec_1-7）h３_Preformatted Text（整形済みテキスト）</h3>
+              <div id="sec_1-7">
+                <h3>■（#sec_1-7）h３_Preformatted Text（整形済みテキスト）</h3>
                 <!-- 改行や空白をそのまま表示。ソースコードなどの表示に利用。 -->
                 <!-- ■
 通常はスペースの連続、改行、インデントなどはひとつの半角スペースにまとめられてしまいますが、この要素を使うと記述した通りの形で表示されるようになります。
@@ -663,15 +663,17 @@ videoタグ（及びaudioタグ）では、下記の書き方をすることで�
             </section>
             <section>
               <div class="side_bar_recommend">
-                <h3>■h3■オススメリンク</h3>
+                <h3>■h3■ページ内リンク</h3>
                 <ul>
                   <li><a href="#top">top</a></li>
+                  <li><a href="#sec_1">標準的な記事</a></li>
+                  <li><a href="#sec_1-1">ol：順序付きリスト</a></li>
+                  <li><a href="#sec_1-2">入力・送信form</a></li>
+                  <li><a href="#sec_1-3">表</a></li>
                   <li><a href="#iframe">iframe</a></li>
-                  <li><a href="#foot">foot</a></li>
-                  <li><a href="■URL■">about</a></li>
-                  <li><a href="■URL■">新規登録</a></li>
-                  <li><a href="■URL■">ログイン</a></li>
-                  <li><a href="■URL■">お問い合わせ</a></li>
+                  <li><a href="#sec_1-5">video</a></li>
+                  <li><a href="#sec_1-6">定義リスト</a></li>
+                  <li><a href="#sec_1-7">整形済みテキスト</a></li>
                 </ul>
               </div>
             </section>
@@ -679,9 +681,10 @@ videoタグ（及びaudioタグ）では、下記の書き方をすることで�
               <div class="side_bar_category">
                 <h3>■h3■カテゴリ</h3>
                 <ul>
-                  <li><a href="■URL■">■カテゴリー１■</a></li>
-                  <li><a href="■URL■">■カテゴリー２■</a></li>
-                  <li><a href="■URL■">■カテゴリー３■</a></li>
+                  <li><a href="■URL■">about</a></li>
+                  <li><a href="■URL■">新規登録</a></li>
+                  <li><a href="■URL■">ログイン</a></li>
+                  <li><a href="■URL■">お問い合わせ</a></li>
                 </ul>
               </div>
             </section>
@@ -721,7 +724,7 @@ crossorigin または crossorigin="" のように属性に空の値を設定す�
   <!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
   <!-- スムーススクロール：固定ヘッダーも考慮したページ内リンクのスムーズな移動を実現するライブラリ -->
-<!--  <script src="./smooth-scroll.polyfills.min.js"></script>-->
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
   <!-- jsは可能であればasync記述して非同期読込 -->
-  <script src="./テンプ.js" async></script>
+  <script src="js/テンプ.js" async></script>
 </body></html>
